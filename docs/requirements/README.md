@@ -93,11 +93,10 @@ reflect a design chosen for clarity and educational value, not one optimized for
 production use. Readers encountering design choices that seem simpler than necessary
 should understand that simplicity is often the point.
 
-1. [Architecture Abstraction](architecture-abstraction.md)
-2. [Platform Support](platform-support.md)
-3. [Devices](devices.md)
-4. [Filesystem](filesystem.md)
-5. [Process Model](process-model.md)
-6. [Program Execution Environment](program-execution-environment.md)
-7. [Rust `std`](rust-std.md)
-8. [Shell and Utilities](shell-and-utilities.md)
+1. [Platform Support](platform-support.md)
+2. [Devices](devices.md)
+3. [Filesystem](filesystem.md)
+4. [Process Model](process-model.md)
+5. [Program Execution Environment](program-execution-environment.md)
+6. [Rust `std`](rust-std.md)
+7. [Shell and Utilities](shell-and-utilities.md)
