@@ -50,7 +50,7 @@ reflects priority.
 
 The following describe what Aleph-0 is as a finished product:
 
-- A working monolithic kernel targeting x86-64 (PC) and AArch64 (Raspberry Pi 4)
+- A working monolithic kernel targeting x86-64 (PC) and AArch64 (emulation only)
 - A clean architecture abstraction layer, making it straightforward to add support for
   new targets
 - A userspace environment including a custom shell and support for userspace programs
@@ -59,7 +59,8 @@ The following describe what Aleph-0 is as a finished product:
 - Support for keyboard input, framebuffer display, block storage, and serial/UART
 - Well-documented subsystem APIs
 - Subsystems that can be unit tested on the host operating system
-- The ability to run in an emulator or virtual machine as well as on real hardware
+- The ability to run in an emulator or virtual machine on both target architectures, and
+  on real x86-64 hardware
 
 ## Non-Goals
 
@@ -73,8 +74,8 @@ The following are explicitly out of scope:
   educational purpose
 - **Complete `std`** — the Rust standard library implementation covers what is needed for
   the shell and simple userspace programs; completeness is not a goal
-- **Broad hardware support** — only x86-64 PC and Raspberry Pi 4 are supported reference
-  platforms
+- **Broad hardware support** — only x86-64 PC and AArch64 (emulation only) are supported
+  targets; AArch64 on real hardware is not a goal
 - **Mouse support**
 - **Networking**
 - **Audio**
