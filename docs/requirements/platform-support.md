@@ -29,8 +29,8 @@ outside this range is unspecified.
 
 ### Symmetric Multiprocessing
 
-Aleph-0 supports SMP on x86-64. All logical CPUs present in the system may be used by
-the kernel.
+Aleph-0 supports SMP on x86-64. The kernel supports all logical CPUs present in the
+system.
 
 ### Boot
 
@@ -40,7 +40,7 @@ the kernel from the hybrid ISO image.
 ## AArch64 (Emulation Only)
 
 AArch64 support is provided through QEMU's `virt` machine. Running Aleph-0 on AArch64
-real hardware is not supported.
+real hardware is not a current goal.
 
 ### Memory
 
@@ -49,13 +49,12 @@ for the virtual machine.
 
 ### Symmetric Multiprocessing
 
-Aleph-0 supports SMP on AArch64. All virtual CPUs configured for the QEMU instance may
-be used by the kernel.
+Aleph-0 supports SMP on AArch64. The kernel supports all virtual CPUs configured for
+the QEMU instance.
 
 ### Boot
 
-AArch64 boots via UEFI firmware (OVMF/EDK2). Limine loads the kernel from the hybrid
-ISO image.
+AArch64 boots via UEFI firmware. Limine loads the kernel from the hybrid ISO image.
 
 ## QEMU Testing Support
 
